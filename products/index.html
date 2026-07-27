@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse seeds, fertilizers, crop protection, and farm tools from Harvest & Field." />
+    <title>Products | Harvest &amp; Field</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#home" aria-label="Harvest and Field home"><span class="brand-mark">✦</span> Harvest <em>&amp;</em> Field</a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-trigger" aria-expanded="false" aria-controls="nav-dropdown-panel">Products <span class="caret">▾</span></button>
+          <div id="nav-dropdown-panel" class="nav-dropdown-panel">
+            <a href="index.html#seeds">Seeds</a>
+            <a href="index.html#fertilizers">Fertilizers</a>
+            <a href="index.html#protection">Pesticides &amp; insecticides</a>
+            <a href="index.html#tools">Tools &amp; equipment</a>
+            <a class="nav-dropdown-all" href="index.html">View all products →</a>
+          </div>
+        </div>
+        <a href="../about.html">About</a><a href="../safety.html">Safety</a><a href="../index.html#contact">Contact</a>
+      </nav>
+      <a class="button button-small header-cta" href="../index.html#quote">Request a quote</a>
+    </header>
+
+    <main>
+      <section class="catalog-hero">
+        <p class="eyebrow">Full range</p>
+        <h1>Products</h1>
+        <p>Browse by category, then open any item for full details, price, and stock status. Select "Request this item" on a product page to send us a tailored quote request.</p>
+      </section>
+
+      <section class="catalog-filters" aria-label="Filter by category">
+        <a href="#seeds" class="filter-chip">Seeds</a>
+        <a href="#fertilizers" class="filter-chip">Fertilizers</a>
+        <a href="#protection" class="filter-chip">Pesticides &amp; insecticides</a>
+        <a href="#tools" class="filter-chip">Tools &amp; equipment</a>
+      </section>
+
+      <section id="seeds" class="catalog-section">
+        <h2>Seeds</h2>
+        <div class="catalog-grid" id="grid-seeds"></div>
+      </section>
+
+      <section id="fertilizers" class="catalog-section">
+        <h2>Fertilizers</h2>
+        <div class="catalog-grid" id="grid-fertilizers"></div>
+      </section>
+
+      <section id="protection" class="catalog-section">
+        <h2>Pesticides &amp; insecticides</h2>
+        <div class="catalog-grid" id="grid-protection"></div>
+      </section>
+
+      <section id="tools" class="catalog-section">
+        <h2>Tools &amp; equipment</h2>
+        <div class="catalog-grid" id="grid-tools"></div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer"><div class="footer-brand"><a class="brand" href="../index.html#home"><span class="brand-mark">✦</span> Harvest <em>&amp;</em> Field</a><p>Dependable inputs for growing farms.</p></div><div><p class="footer-label">Contact</p><a href="mailto:hello@harvestandfield.com">hello@harvestandfield.com</a><a href="tel:+2348000000000">+234 800 000 0000</a></div><div><p class="footer-label">Follow along</p><a href="#">Instagram</a><a href="#">Facebook</a></div><p class="copyright">© <span id="year"></span> Harvest &amp; Field</p></footer>
+
+    <script src="../products.js"></script>
+    <script src="../script.js"></script>
+    <script src="catalog.js"></script>
+  </body>
+</html>
