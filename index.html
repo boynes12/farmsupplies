@@ -21,13 +21,16 @@
             <a href="products/index.html#seeds">Seeds</a>
             <a href="products/index.html#fertilizers">Fertilizers</a>
             <a href="products/index.html#protection">Pesticides &amp; insecticides</a>
+            <a href="products/index.html#sprayers">Sprayers &amp; application equipment</a>
             <a href="products/index.html#tools">Tools &amp; equipment</a>
+            <a href="products/index.html#livestock-care">Livestock &amp; equine care</a>
             <a class="nav-dropdown-all" href="products/index.html">View all products →</a>
           </div>
         </div>
         <a href="about.html">About</a><a href="safety.html">Safety</a><a href="#contact">Contact</a>
+        <a href="#quote" class="nav-cta-mobile">Request a quote <span class="cart-badge" data-cart-badge hidden>0</span></a>
       </nav>
-      <a class="button button-small header-cta" href="#quote">Request a quote</a>
+      <a class="button button-small header-cta" href="#quote">Request a quote <span class="cart-badge" data-cart-badge hidden>0</span></a>
     </header>
 
     <main>
@@ -49,11 +52,13 @@
 
       <section id="products" class="section products">
         <div class="section-heading"><div><p class="eyebrow">Our range</p><h2>Farm inputs that work as hard as you do.</h2></div><p>Explore our core range. Open any category to see individual products, prices, and stock status.</p></div>
-        <div class="product-grid">
+        <div class="product-grid product-grid-6">
           <a class="product-card" href="products/index.html#seeds"><div class="product-icon seed">✤</div><p class="card-label">Planting</p><h3>Seeds</h3><p>Reliable vegetable, cereal, and field-crop seeds selected for strong starts.</p><span class="text-link-inline">Browse seeds →</span></a>
           <a class="product-card" href="products/index.html#fertilizers"><div class="product-icon fertilizer">◒</div><p class="card-label">Soil nutrition</p><h3>Fertilizers</h3><p>Balanced nutrition and soil conditioners to support vigorous growth.</p><span class="text-link-inline">Browse fertilizers →</span></a>
           <a class="product-card featured" href="products/index.html#protection"><div class="product-icon protect">⌁</div><p class="card-label">Crop protection</p><h3>Pesticides &amp; insecticides</h3><p>Label-approved products to help manage insects, weeds, and crop diseases.</p><span class="text-link-inline">Browse protection →</span></a>
-          <a class="product-card" href="products/index.html#tools"><div class="product-icon tools">⌁</div><p class="card-label">Equipment</p><h3>Tools &amp; sprayers</h3><p>Useful equipment and protective gear for safer, more efficient work.</p><span class="text-link-inline">Browse tools →</span></a>
+          <a class="product-card" href="products/index.html#sprayers"><div class="product-icon protect">⛆</div><p class="card-label">Application</p><h3>Sprayers &amp; equipment</h3><p>Backpack and pump sprayers for herbicides, pesticides, and foliar feeding.</p><span class="text-link-inline">Browse sprayers →</span></a>
+          <a class="product-card" href="products/index.html#tools"><div class="product-icon tools">⌁</div><p class="card-label">Equipment</p><h3>Tools &amp; equipment</h3><p>Power tools, carts, and equipment that keep a farm running smoothly.</p><span class="text-link-inline">Browse tools →</span></a>
+          <a class="product-card" href="products/index.html#livestock-care"><div class="product-icon seed">✤</div><p class="card-label">Animal care</p><h3>Livestock &amp; equine care</h3><p>Fly masks, farrier tools, and everyday livestock and horse-care essentials.</p><span class="text-link-inline">Browse livestock care →</span></a>
         </div>
       </section>
 
@@ -68,16 +73,21 @@
         <div class="quote-copy">
           <p class="eyebrow">Let's talk inputs</p>
           <h2>Request a quote for your farm.</h2>
-          <p>Tell us what you are growing and what you need. We will get back to you with availability and guidance.</p>
+          <p>Browse the catalog and tap "+ Add to quote" on anything you need — add as many items as you like, then send it all as one request. Or just tell us what you're growing below.</p>
           <p class="small-note">For crop-protection products, please include the crop and the pest, weed, or disease you are managing.</p>
-          <div id="quote-selected-product" class="quote-selected-product" hidden>
-            <p class="quote-selected-label">Requesting a quote for:</p>
-            <p class="quote-selected-name" id="quote-selected-name"></p>
-            <button type="button" class="text-link quote-clear" id="quote-clear-product">Remove item ×</button>
+
+          <div class="quote-cart-box">
+            <div class="quote-cart-header">
+              <p class="quote-selected-label">Your quote list</p>
+              <span id="quote-cart-count" class="quote-cart-count">0 items selected</span>
+            </div>
+            <p id="quote-cart-empty" class="quote-cart-empty">Nothing added yet — <a href="products/index.html">browse products</a> and tap "+ Add to quote" on anything you need.</p>
+            <ul id="quote-cart-list" class="quote-cart-list" hidden></ul>
+            <button type="button" class="text-link quote-clear" id="quote-cart-clear">Clear list ×</button>
           </div>
         </div>
         <!-- Replace YOUR_FORMSPREE_FORM_ID with the form ID from your Formspree dashboard. -->
-        <form class="quote-form" action="https://formspree.io/f/xbdnabzn" method="POST">
+        <form class="quote-form" action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST">
           <label>Name<input type="text" name="name" required autocomplete="name" /></label>
           <label>Email address<input type="email" name="email" required autocomplete="email" /></label>
           <label>Phone number<input type="tel" name="phone" autocomplete="tel" /></label>
@@ -85,11 +95,13 @@
             <option value="Seeds">Seeds</option>
             <option value="Fertilizers">Fertilizers</option>
             <option value="Pesticides and insecticides">Pesticides &amp; insecticides</option>
-            <option value="Tools and sprayers">Tools &amp; sprayers</option>
+            <option value="Sprayers and application equipment">Sprayers &amp; application equipment</option>
+            <option value="Tools and equipment">Tools &amp; equipment</option>
+            <option value="Livestock and equine care">Livestock &amp; equine care</option>
             <option value="Bulk order">Bulk order</option>
           </select></label>
-          <input type="hidden" name="product" id="quote-product-field" value="" />
-          <label class="full-width">Tell us about your request<textarea name="message" id="quote-message" rows="4" required placeholder="Crop, farm size, quantities, location, or any question you have…"></textarea></label>
+          <input type="hidden" name="products" id="quote-products-field" value="" />
+          <label class="full-width">Tell us about your request<textarea name="message" id="quote-message" rows="5" required placeholder="Crop, farm size, quantities, location, or any question you have…"></textarea></label>
           <input type="hidden" name="_subject" value="New Harvest & Field quote request" />
           <button class="button form-button" type="submit">Send quote request <span>→</span></button>
           <p class="form-note">By submitting, you agree that we may contact you about your request.</p>
@@ -97,6 +109,8 @@
       </section>
     </main>
     <footer id="contact" class="site-footer"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">✦</span> Harvest <em>&amp;</em> Field</a><p>Dependable inputs for growing farms.</p></div><div><p class="footer-label">Contact</p><a href="mailto:hello@harvestandfield.com">hello@harvestandfield.com</a><a href="tel:+2348000000000">+234 800 000 0000</a></div><div><p class="footer-label">Follow along</p><a href="#">Instagram</a><a href="#">Facebook</a></div><p class="copyright">© <span id="year"></span> Harvest &amp; Field</p></footer>
+    <script src="products.js"></script>
     <script src="script.js"></script>
+    <script src="quote-cart.js"></script>
   </body>
 </html>

@@ -12,7 +12,9 @@ const CATEGORY_LABELS = {
   seeds: "Seeds",
   fertilizers: "Fertilizers",
   protection: "Pesticides & insecticides",
-  tools: "Tools & equipment"
+  sprayers: "Sprayers & application equipment",
+  tools: "Tools & equipment",
+  "livestock-care": "Livestock & equine care"
 };
 
 function getParam(name) {
@@ -21,17 +23,20 @@ function getParam(name) {
 
 function cardHTML(p) {
   return `
-    <a class="catalog-card" href="product.html?id=${encodeURIComponent(p.id)}">
-      <div class="catalog-card-image">
-        <img src="../images/${p.image}" alt="${p.name}" loading="lazy" />
-        <span class="status-pill ${statusClass(p.status)}">${p.status}</span>
-      </div>
-      <div class="catalog-card-body">
-        <h3>${p.name}</h3>
-        <p>${p.short}</p>
-        <span class="catalog-card-price">${p.price}</span>
-      </div>
-    </a>`;
+    <div class="catalog-card">
+      <a class="catalog-card-link" href="product.html?id=${encodeURIComponent(p.id)}">
+        <div class="catalog-card-image">
+          <img src="../images/${p.image}" alt="${p.name}" loading="lazy" />
+          <span class="status-pill ${statusClass(p.status)}">${p.status}</span>
+        </div>
+        <div class="catalog-card-body">
+          <h3>${p.name}</h3>
+          <p>${p.short}</p>
+          <span class="catalog-card-price">${p.price}</span>
+        </div>
+      </a>
+      <button type="button" class="add-to-quote-btn" data-add-to-quote="${p.id}">+ Add to quote</button>
+    </div>`;
 }
 
 function renderProduct() {
@@ -67,10 +72,10 @@ function renderProduct() {
       <p class="product-price">${product.price}</p>
       <p class="product-description">${product.description}</p>
       <div class="product-actions">
-        <a class="button" href="../index.html#quote?product=${encodeURIComponent(product.id)}" data-quote-link data-product-id="${product.id}" data-product-name="${product.name}">Request this item</a>
-        <a class="text-link" href="index.html#${product.category}">Back to ${CATEGORY_LABELS[product.category] || "products"} <span>→</span></a>
+        <button type="button" class="button" data-add-to-quote="${product.id}">+ Add to quote</button>
+        <a class="text-link" href="../index.html#quote">View quote list <span>→</span></a>
       </div>
-      <p class="product-note">Prices and availability are confirmed at quote time. For crop-protection items, please have the crop and target pest or disease ready when you request a quote.</p>
+      <p class="product-note">Add as many products as you need to your quote list, then submit them together from the quote form. For crop-protection items, please have the crop and target pest or disease ready.</p>
     </div>`;
 
   // Similar items: same category, excluding the current product
@@ -80,17 +85,7 @@ function renderProduct() {
     ? similar.map(cardHTML).join("")
     : `<p class="empty-note">No other items listed in this category yet.</p>`;
 
-  wireQuoteLink();
-}
-
-function wireQuoteLink() {
-  const link = document.querySelector("[data-quote-link]");
-  if (!link) return;
-  link.addEventListener("click", () => {
-    try {
-      sessionStorage.setItem("hf_quote_product", link.getAttribute("data-product-name"));
-    } catch (e) { /* storage unavailable — quote form still works without prefill */ }
-  });
+  if (typeof updateCartUI === "function") updateCartUI();
 }
 
 renderProduct();

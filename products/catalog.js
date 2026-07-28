@@ -10,21 +10,24 @@ function statusClass(status) {
 
 function cardHTML(p) {
   return `
-    <a class="catalog-card" href="product.html?id=${encodeURIComponent(p.id)}">
-      <div class="catalog-card-image">
-        <img src="../images/${p.image}" alt="${p.name}" loading="lazy" />
-        <span class="status-pill ${statusClass(p.status)}">${p.status}</span>
-      </div>
-      <div class="catalog-card-body">
-        <h3>${p.name}</h3>
-        <p>${p.short}</p>
-        <span class="catalog-card-price">${p.price}</span>
-      </div>
-    </a>`;
+    <div class="catalog-card">
+      <a class="catalog-card-link" href="product.html?id=${encodeURIComponent(p.id)}">
+        <div class="catalog-card-image">
+          <img src="../images/${p.image}" alt="${p.name}" loading="lazy" />
+          <span class="status-pill ${statusClass(p.status)}">${p.status}</span>
+        </div>
+        <div class="catalog-card-body">
+          <h3>${p.name}</h3>
+          <p>${p.short}</p>
+          <span class="catalog-card-price">${p.price}</span>
+        </div>
+      </a>
+      <button type="button" class="add-to-quote-btn" data-add-to-quote="${p.id}">+ Add to quote</button>
+    </div>`;
 }
 
 function render() {
-  const groups = { seeds: [], fertilizers: [], protection: [], tools: [] };
+  const groups = { seeds: [], fertilizers: [], protection: [], sprayers: [], tools: [], "livestock-care": [] };
   PRODUCTS.forEach((p) => { if (groups[p.category]) groups[p.category].push(p); });
 
   Object.keys(groups).forEach((cat) => {
@@ -34,6 +37,8 @@ function render() {
       ? groups[cat].map(cardHTML).join("")
       : `<p class="empty-note">No items listed in this category yet — contact us for availability.</p>`;
   });
+
+  if (typeof updateCartUI === "function") updateCartUI();
 }
 
 render();

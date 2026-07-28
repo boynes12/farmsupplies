@@ -480,4 +480,172 @@ const PRODUCTS = [
     short: "Hexagonal panel hay feeder with curved feeding bars.",
     description: "A hexagonal panel hay feeder with curved feeding bars around the perimeter, sized for a round bale. Panelled sides help contain loose hay and reduce waste."
   },
+
+  // ---------- MORE SEEDS ----------
+  {
+    id: "dlf-forage-seed",
+    category: "seeds",
+    name: "DLF Forage Seed",
+    image: "img79.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Forage seed blend for pasture and hay ground.",
+    description: "DLF Forage Seed is bred for pasture and hay production, selected for stand persistence and forage quality. Ask us about the blend suited to your soil type, grazing plan, or hay program."
+  },
+  {
+    id: "dlf-pickseed-corn",
+    category: "seeds",
+    name: "DLF Pickseed Seed Corn",
+    image: "img80.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Seed corn from DLF Pickseed for grain or silage production.",
+    description: "DLF Pickseed seed corn selected for strong emergence and yield potential. Contact us for the hybrid maturity and population best suited to your field and end use (grain or silage)."
+  },
+  {
+    id: "dlf-seed-corn",
+    category: "seeds",
+    name: "DLF Seed Corn",
+    image: "img81.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "DLF seed corn, bilingual packaging, for grain or silage production.",
+    description: "DLF seed corn bred for consistent emergence and standability. Ask us about the hybrid and maturity rating available for your growing zone."
+  },
+
+  // ---------- MORE POWER TOOLS & CARTS (tools & equipment) ----------
+  {
+    id: "dewalt-hedge-trimmer",
+    category: "tools",
+    name: "DeWalt Cordless Hedge Trimmer",
+    image: "img84.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "20V cordless hedge trimmer for yard and hedgerow maintenance.",
+    description: "A DeWalt 20V cordless hedge trimmer suited to shaping hedges and trimming yard growth around farm buildings and driveways. Battery and charger sold separately unless noted — ask us about kit options."
+  },
+  {
+    id: "dewalt-pole-saw",
+    category: "tools",
+    name: "DeWalt Cordless Pole Saw",
+    image: "img85.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "20V brushless telescoping pole saw for pruning and limbing.",
+    description: "A DeWalt 20V brushless pole saw with an extendable shaft, useful for pruning branches and clearing overhead growth without a ladder. Ask us about bar length and battery options."
+  },
+  {
+    id: "tow-behind-lawn-sweeper",
+    category: "tools",
+    name: "Tow-Behind Lawn Sweeper",
+    image: "img86.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Tow-behind brush sweeper for clearing leaves and debris from large areas.",
+    description: "A tow-behind lawn sweeper with a brush roller and collection hopper, useful for clearing leaves, grass clippings, and light debris from yards, laneways, and paddocks. Hitches behind a lawn tractor or ATV."
+  },
+  {
+    id: "garden-utility-cart-gray",
+    category: "tools",
+    name: "Garden Utility Cart (4-Wheel)",
+    image: "img87.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "4-wheel poly utility cart for hauling tools, feed, or garden supplies.",
+    description: "A 4-wheel poly-bed utility cart with pneumatic tires and a pull handle, useful for hauling tools, feed bags, or garden supplies around the yard or barn."
+  },
+  {
+    id: "dewalt-leaf-blower",
+    category: "tools",
+    name: "DeWalt Cordless Leaf Blower",
+    image: "img88.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "20V brushless cordless blower for clearing leaves and debris.",
+    description: "A DeWalt 20V brushless cordless blower for clearing leaves, grass clippings, and light debris from yards, driveways, and shop floors. Ask us about battery and charger kit options."
+  },
+  {
+    id: "garden-utility-cart-green",
+    category: "tools",
+    name: "Heavy-Duty Garden Cart (Mesh-Side)",
+    image: "img89.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Mesh-sided folding utility cart with large pneumatic tires.",
+    description: "A heavy-duty folding utility cart with mesh sides and large pneumatic tires, suited to hauling firewood, garden produce, feed, or general yard hauling. Folds flat for storage."
+  },
+
+  // ---------- SPRAYERS & APPLICATION EQUIPMENT ----------
+  {
+    id: "dewalt-backpack-sprayer",
+    category: "sprayers",
+    name: "DeWalt Backpack Sprayer",
+    image: "img91.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Backpack sprayer for herbicide, pesticide, or fertilizer application.",
+    description: "A DeWalt backpack sprayer with padded straps and an adjustable wand, suited to applying herbicides, pesticides, or liquid fertilizer over larger areas than a handheld sprayer allows. Ask us about tank capacity and pressure rating."
+  },
+  {
+    id: "chapin-backpack-sprayer",
+    category: "sprayers",
+    name: "Chapin Backpack Sprayer",
+    image: "img92.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Manual pump backpack sprayer with adjustable pressure control.",
+    description: "A Chapin manual pump backpack sprayer with an adjustable pressure regulator, suited to spot spraying herbicides, pesticides, or foliar fertilizers. No battery or fuel required."
+  },
+  {
+    id: "roundup-pump-sprayer",
+    category: "sprayers",
+    name: "Roundup Pump Sprayer",
+    image: "img93.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Handheld/wearable pump sprayer for spot treatment.",
+    description: "A Roundup-branded pump pressure sprayer suited to spot-treating weeds around yards, fence lines, and small areas. Simple pump-and-spray operation with an adjustable nozzle."
+  },
+  {
+    id: "roundup-pro-backpack-sprayer",
+    category: "sprayers",
+    name: "Roundup PRO Backpack Sprayer",
+    image: "img94.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Backpack sprayer with PumpZero technology for consistent output.",
+    description: "A Roundup PRO backpack sprayer featuring PumpZero technology for reduced pumping effort and consistent spray output, suited to larger spraying jobs around the farm."
+  },
+
+  // ---------- LIVESTOCK & EQUINE CARE ----------
+  {
+    id: "horse-fly-mask",
+    category: "livestock-care",
+    name: "Horse Fly Mask",
+    image: "img95.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Protective fly mask with ear covers for horses.",
+    description: "A fly mask with ear covers that shields a horse's eyes and ears from flies and irritation while still allowing full visibility. Adjustable straps for a secure, comfortable fit."
+  },
+  {
+    id: "hoof-nippers",
+    category: "livestock-care",
+    name: "Farrier's Hoof Nippers",
+    image: "img97.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Precision hoof nippers for trimming horse hooves.",
+    description: "Precision-forged hoof nippers used by farriers and horse owners for trimming excess hoof wall before shoeing or routine hoof maintenance."
+  },
+  {
+    id: "farrier-clinching-tool",
+    category: "livestock-care",
+    name: "Farrier's Clinching Tool",
+    image: "img98.webp",
+    price: "Call for pricing",
+    status: "In stock",
+    short: "Long-handled clinching tool for setting horseshoe nails.",
+    description: "A long-handled farrier's clinching tool used to bend over and set horseshoe nail ends securely against the hoof wall during shoeing."
+  },
 ];

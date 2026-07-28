@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Browse seeds, fertilizers, crop protection, and farm tools from Harvest & Field." />
+    <meta name="description" content="Browse seeds, fertilizers, crop protection, sprayers, farm tools, and livestock care products from Harvest & Field." />
     <title>Products | Harvest &amp; Field</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,13 +21,16 @@
             <a href="index.html#seeds">Seeds</a>
             <a href="index.html#fertilizers">Fertilizers</a>
             <a href="index.html#protection">Pesticides &amp; insecticides</a>
+            <a href="index.html#sprayers">Sprayers &amp; application equipment</a>
             <a href="index.html#tools">Tools &amp; equipment</a>
+            <a href="index.html#livestock-care">Livestock &amp; equine care</a>
             <a class="nav-dropdown-all" href="index.html">View all products →</a>
           </div>
         </div>
         <a href="../about.html">About</a><a href="../safety.html">Safety</a><a href="../index.html#contact">Contact</a>
+        <a href="../index.html#quote" class="nav-cta-mobile">Request a quote <span class="cart-badge" data-cart-badge hidden>0</span></a>
       </nav>
-      <a class="button button-small header-cta" href="../index.html#quote">Request a quote</a>
+      <a class="button button-small header-cta" href="../index.html#quote">Request a quote <span class="cart-badge" data-cart-badge hidden>0</span></a>
     </header>
 
     <main>
@@ -41,7 +44,9 @@
         <a href="#seeds" class="filter-chip">Seeds</a>
         <a href="#fertilizers" class="filter-chip">Fertilizers</a>
         <a href="#protection" class="filter-chip">Pesticides &amp; insecticides</a>
+        <a href="#sprayers" class="filter-chip">Sprayers &amp; application equipment</a>
         <a href="#tools" class="filter-chip">Tools &amp; equipment</a>
+        <a href="#livestock-care" class="filter-chip">Livestock &amp; equine care</a>
       </section>
 
       <section id="seeds" class="catalog-section">
@@ -59,9 +64,19 @@
         <div class="catalog-grid" id="grid-protection"></div>
       </section>
 
+      <section id="sprayers" class="catalog-section">
+        <h2>Sprayers &amp; application equipment</h2>
+        <div class="catalog-grid" id="grid-sprayers"></div>
+      </section>
+
       <section id="tools" class="catalog-section">
         <h2>Tools &amp; equipment</h2>
         <div class="catalog-grid" id="grid-tools"></div>
+      </section>
+
+      <section id="livestock-care" class="catalog-section">
+        <h2>Livestock &amp; equine care</h2>
+        <div class="catalog-grid" id="grid-livestock-care"></div>
       </section>
     </main>
 
@@ -69,6 +84,7 @@
 
     <script src="../products.js"></script>
     <script src="../script.js"></script>
+    <script src="../quote-cart.js"></script>
     <script src="catalog.js"></script>
   </body>
 </html>
