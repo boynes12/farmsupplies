@@ -85,6 +85,9 @@ function renderProduct() {
     ? similar.map(cardHTML).join("")
     : `<p class="empty-note">No other items listed in this category yet.</p>`;
 
+  const viewAllLink = document.getElementById("view-all-category");
+  if (viewAllLink) viewAllLink.href = `index.html#${product.category}`;
+
   if (typeof updateCartUI === "function") updateCartUI();
 }
 
