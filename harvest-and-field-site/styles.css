@@ -280,12 +280,16 @@ img{max-width:100%}
 .site-header .header-cta .cart-badge{background:#fff;color:var(--orange)}
 
 /* Mobile menu panel stays on a solid, readable surface — only the slim
-   collapsed bar shows the photo, matching how the desktop nav reads. */
+   collapsed bar shows the photo, matching how the desktop nav reads.
+   Selectors here are scoped under .site-header to out-specificity the
+   desktop text-color rules above, which otherwise still win on mobile. */
 @media(max-width:760px){
   .site-header{background-image:none;background-color:#102c25}
-  .site-nav{background:var(--cream)}
-  .site-nav > a,
-  .nav-dropdown-trigger{color:var(--ink)}
-  .nav-dropdown-trigger:hover,
-  .nav-dropdown-trigger[aria-expanded="true"]{color:var(--orange)}
+  .site-header .site-nav{background:var(--cream)}
+  .site-header .site-nav > a{color:var(--ink)}
+  .site-header .site-nav > a:hover{color:var(--orange)}
+  .site-header .nav-dropdown-trigger{color:var(--ink)}
+  .site-header .nav-dropdown-trigger:hover,
+  .site-header .nav-dropdown-trigger[aria-expanded="true"]{color:var(--orange)}
+  .site-header .header-cta{display:none}
 }

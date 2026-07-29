@@ -619,14 +619,14 @@ const PRODUCTS = [
     description: "A fly mask with ear covers that shields a horse's eyes and ears from flies and irritation while still allowing full visibility. Adjustable straps for a secure, comfortable fit."
   },
   {
-    id: "Lamb Chops",
+    id: "hoof-nippers",
     category: "livestock-care",
-    name: "Lamb Chops",
+    name: "Farrier's Hoof Nippers",
     image: "img97.webp",
     price: "Call for pricing",
     status: "In stock",
-    short: "Pressed lamb pucks.",
-    description: "Pressed pucks made from lamb meat and trimmings preservative free."
+    short: "Precision hoof nippers for trimming horse hooves.",
+    description: "Precision-forged hoof nippers used by farriers and horse owners for trimming excess hoof wall before shoeing or routine hoof maintenance."
   },
   {
     id: "farrier-clinching-tool",
