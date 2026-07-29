@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Harvest & Field — an independent agricultural-input business serving growers with dependable products and practical support." />
+    <title>About | Harvest &amp; Field</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Harvest and Field home"><span class="brand-mark">✦</span> Harvest <em>&amp;</em> Field</a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-trigger" aria-expanded="false" aria-controls="nav-dropdown-panel">Products <span class="caret">▾</span></button>
+          <div id="nav-dropdown-panel" class="nav-dropdown-panel">
+            <a href="products/index.html#seeds">Seeds</a>
+            <a href="products/index.html#fertilizers">Fertilizers</a>
+            <a href="products/index.html#protection">Pesticides &amp; insecticides</a>
+            <a href="products/index.html#sprayers">Sprayers &amp; application equipment</a>
+            <a href="products/index.html#tools">Tools &amp; equipment</a>
+            <a href="products/index.html#livestock-care">Livestock &amp; equine care</a>
+            <a class="nav-dropdown-all" href="products/index.html">View all products →</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-current">About</a><a href="safety.html">Safety</a><a href="index.html#contact">Contact</a>
+        <a href="index.html#quote" class="nav-cta-mobile">Request a quote <span class="cart-badge" data-cart-badge hidden>0</span></a>
+      </nav>
+      <a class="button button-small header-cta" href="index.html#quote">Request a quote <span class="cart-badge" data-cart-badge hidden>0</span></a>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">About Harvest &amp; Field</p>
+        <h1>Good farming begins with good decisions.</h1>
+        <p>We are an independent agricultural-input business serving growers with dependable products, clear information, and friendly, practical support.</p>
+      </section>
+
+      <section class="section story">
+        <div class="story-art"><span>01</span><div class="field-lines"></div><div class="story-leaf">❧</div></div>
+        <div class="story-copy">
+          <p class="eyebrow">Who we are</p>
+          <h2>Rooted in the communities we serve.</h2>
+          <p>Whether you are tending a small plot or managing a larger operation, we will help you find inputs suited to your crop, season, and goals. Our team draws on hands-on farming knowledge, not just a catalog of products.</p>
+          <p>We stock genuine seeds, fertilizers, crop-protection products, and the tools and equipment that keep a farm running — and we back every sale with straightforward advice.</p>
+          <a class="text-link" href="index.html#quote">Talk to us about your farm <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="section about-values">
+        <div class="section-heading">
+          <div><p class="eyebrow">What guides us</p><h2>Farmer-first, every time.</h2></div>
+        </div>
+        <div class="product-grid">
+          <div class="product-card"><div class="product-icon seed">✤</div><p class="card-label">Trust</p><h3>Genuine products</h3><p>Every input we sell is sourced to be authentic and correctly labelled, so you know exactly what you're applying.</p></div>
+          <div class="product-card"><div class="product-icon fertilizer">◒</div><p class="card-label">Guidance</p><h3>Practical advice</h3><p>We take the time to understand your crop, field, and goals before recommending a product or rate.</p></div>
+          <div class="product-card featured"><div class="product-icon protect">⌁</div><p class="card-label">Reliability</p><h3>Consistent supply</h3><p>From single bags to bulk orders, we plan ahead so the inputs you need are there when the season calls for them.</p></div>
+          <div class="product-card"><div class="product-icon tools">⌁</div><p class="card-label">Safety</p><h3>Responsible handling</h3><p>We guide every customer toward the safe, correct use of crop-protection products and equipment. <a class="text-link-inline" href="safety.html">Read our safety approach →</a></p></div>
+        </div>
+      </section>
+
+      <section class="quote-teaser">
+        <div>
+          <p class="eyebrow">Let's talk inputs</p>
+          <h2>Ready to plan your next season?</h2>
+          <p>Tell us what you're growing and what you need — we'll get back to you with availability and guidance.</p>
+        </div>
+        <a class="button" href="index.html#quote">Request a quote <span>→</span></a>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer"><div class="footer-brand"><a class="brand" href="index.html#home"><span class="brand-mark">✦</span> Harvest <em>&amp;</em> Field</a><p>Dependable inputs for growing farms.</p></div><div><p class="footer-label">Contact</p><a href="mailto:hello@harvestandfield.com">hello@harvestandfield.com</a><a href="tel:+2348000000000">+234 800 000 0000</a></div><div><p class="footer-label">Follow along</p><a href="#">Instagram</a><a href="#">Facebook</a></div><p class="copyright">© <span id="year"></span> Harvest &amp; Field</p></footer>
+    <script src="script.js"></script>
+    <script src="quote-cart.js"></script>
+  </body>
+</html>
